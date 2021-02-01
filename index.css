@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+
+}
+
+
+/***********Up*********/
+#up {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 5;
+    color: #bf3021;
+    cursor: pointer;
+    display: none;
+}
+.row{
+    margin-bottom: 1em;
+}
+
+/**************        NavBar        **********/
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color:#bf3021;
+}
+.navbar-dark .navbar-nav .show>.nav-link{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link .active,
+.search-button:hover {
+    color: #bf3021;
+}
+
+.search-button {
+    color: white;
+}
+
+@media (max-width:400px) {
+    .navbar-toggler {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        background-color: #bf3021;
+        margin: 0;
+    }
+}
+
+.navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-brand {
+    padding: 10px;
+    color: white;
+    background-color: #bf3021;
+    padding-left: 100px;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+    margin-left: 0;
+}
+
+.navbar .navbar-brand h1 {
+    display: inline-block;
+    font-size: 1.2em;
+
+}
+
+.navbar li {
+    text-transform: uppercase;
+}
+.searchInput{
+    display: none;
+}
+
+/*************** Breaking*****************/
+.breaking, .fashion-hot, .business, .instgram, .footer{
+    margin-top: 13px;
+    padding: 15px;
+}
+
+
+.breaking .carousel-inner img {
+    height: fit-content;
+}
+
+@media (max-width:990px) {
+    .breaking .carousel-inner img {
+        height: auto;
+    }
+
+    .breaking .carousel-inner {
+        margin-bottom: 10px;
+    }
+}
+
+.breaking .carousel-inner {
+    position: relative;
+}
+
+.breaking .carousel-inner .slider-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(5deg, rgb(11 11 11 / 66%), #ffffff00);
+    opacity: .5;
+    z-index: 2;
+}
+
+.breaking .carousel-inner .breakingdate {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    color: white;
+    z-index: 3;
+    font-weight: bold;
+}
+
+.breaking .carousel-inner .breakingP {
+    position: absolute;
+    bottom: 3px;
+    font-size: 1.5em;
+    color: white;
+    z-index: 3;
+    font-size: 1em;
+    left: 5px;
+}
+
+.breaking .carousel-indicators {
+    position: absolute;
+    right: 1px !important;
+    bottom: 1px;
+    left: auto;
+
+}
+
+.breaking .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, .01);
+    border: 4px solid white;
+}
+
+.breaking .carousel-indicators .active {
+    border: 4px solid #bf3021;
+}
+
+h2.heading-title {
+    text-transform: uppercase;
+    color: #bf3021;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+hr.heading-line {
+    height: 4px;
+    width: 100px;
+    margin: 5px 0 15px;
+    background-color: #272727;
+    opacity: .7;
+}
+
+/***************Fashion**********/
+.fashion-hot .fa-angle-left,
+.fashion-hot .fa-angle-right,
+.business .fa-angle-left,
+.business .fa-angle-right {
+    padding: 6px 11px;
+    opacity: .7;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+
+.fashion-hot .fa-angle-left:hover,
+.fashion-hot .fa-angle-right:hover, .business .fa-angle-left:hover,
+.business .fa-angle-right:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #bf3021;
+    border: none;
+}
+
+.fashion-hot h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 13px;
+    opacity: .8;
+}
+
+.fashion-hot span {
+    font-size: .8em;
+    opacity: .8;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.fashion-hot i {
+    font-size: .8em;
+    opacity: .5;
+}
+
+.fashion-hot p {
+    font-size: .8em;
+    opacity: .7;
+}
+
+.fashion {
+    margin-bottom: 20px;
+}
+
+/***************  Business ***************/
+.business h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 13px;
+    opacity: .8;
+}
+
+.business span {
+    font-size: .8em;
+    opacity: .8;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.business i {
+    font-size: .8em;
+    opacity: .5;
+}
+
+.business p {
+    font-size: .8em;
+    opacity: .7;
+}
+
+.business {
+    margin-bottom: 20px;
+}
+.business .eventSchedule{
+padding-left: 10px;
+}
+.business .eventSchedule h2{
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+   
+}
+.business .eventSchedule .eventDate p{
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.business .eventSchedule .eventDate h1{
+    display: inline-block;
+    font-size: 3.2em;
+    font-weight: bold;
+}
+.eventComment i{
+    margin-bottom: 15px;
+}
+@media(min-width:768px) and (max-width:992px){
+    .hot{
+        width:100%
+    }
+}
+@media (min-width:0) and (max-width:576px){
+    .eventSchedule{
+        padding-left:10px;
+    }
+}
+
+/*************   Instgram  ***********/
+.instgram img{
+    width: 185px;
+    height: auto;
+}
+.twitterFeed h5{
+    color: #bf3021;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.twitterFeed p{
+    opacity: .7;
+    font-size: .65em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.twitterFeed span{
+    opacity: .5;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: .8em;
+}
+
+/*************    Footer  *******************/
+.footer{
+    color: white;
+    background-color: #272727;
+    padding: 20px;
+}
+.footer .propress{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.footer .prologo{
+    margin-top: -4px;
+}
+.footer .logoP{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    font-size: .8em;
+    color: #afaeac;
+    font-weight: bold;
+}
+
+.footer .newsletter{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin: 41px 0;
+}
+.footer button{
+    border: none;
+    padding: 1.7px 10px;
+    outline: none;
+    background-color: #bf3021;
+    color: white;
+    font-weight: bold;
+    margin-left: -10px;
+}
+.footer input{
+    outline: none;
+}
+
+.footer p{
+    font-size: .9em;
+}
+.footer .row .col-8 span, .footer .row .col-8 i{
+    font-size: .7em;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+.footer h3{
+    margin-bottom: 20px;
+}
+.footer .row {
+margin-bottom: 5px;
+}
+
+.copyright{
+    background-color: #bf3021;
+    color: #ffffff;
+}
+.copyright .row{
+margin-bottom: 0;
+}
+.copyright span{
+    margin-left:10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
